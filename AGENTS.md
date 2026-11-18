@@ -5,6 +5,6 @@
 - **Backing Store**: PostgreSQL + pgvector (RLS)
 - **Publishes**: knowledge.source.ingested.v1
 - **Consumes**: knowledge.source.uploaded.v1, dispute.case.decided.v1
-- **Verification**: `.\mvnw.cmd verify`
+- **Verification**: `.\gradlew.bat check`
 
 Follow `.agents/skills/disputeiq-engineering/SKILL.md`.

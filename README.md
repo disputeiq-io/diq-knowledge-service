@@ -8,5 +8,5 @@ Rulebook, policy, and precedent ingestion plus hybrid RAG retrieval API
 ## Verify
 
 ```powershell
-.\mvnw.cmd verify
+.\gradlew.bat check
 ```
