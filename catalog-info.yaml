@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: diq-knowledge-service
+  description: Rulebook, policy, and precedent ingestion plus hybrid RAG retrieval API
+spec:
+  type: service
+  lifecycle: experimental
+  owner: platform-team
+  system: disputeiq
