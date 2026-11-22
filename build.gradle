@@ -12,9 +12,16 @@ apply from: rootProject.file('gradle/java-conventions.gradle')
 
 dependencies {
     implementation 'io.disputeiq:diq-common-starter:1.0.0-SNAPSHOT'
+    implementation 'io.disputeiq:diq-event-schemas:1.0.0-SNAPSHOT'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.flywaydb:flyway-core'
+    implementation 'org.flywaydb:flyway-database-postgresql'
+
+    runtimeOnly 'org.postgresql:postgresql'
+    runtimeOnly 'com.h2database:h2'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'com.tngtech.archunit:archunit-junit5:1.3.0'
