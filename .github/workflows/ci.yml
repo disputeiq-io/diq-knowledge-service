@@ -6,7 +6,7 @@ on:
 
 jobs:
   pipeline:
-    uses: disputeiq-platform/.github/.github/workflows/java-service.yml@main
+    uses: disputeiq-io/.github/.github/workflows/java-service.yml@main
     with:
       service_name: diq-knowledge-service
       publish: ${{ github.ref == 'refs/heads/main' }}
